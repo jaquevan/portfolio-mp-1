@@ -1,0 +1,48 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightsteelblue;
+
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+}
+
+li{
+    display: inline;
+    padding-left: 2px;
+    padding-right: 2px;
+    : none;
+
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+/* For screens bigger than 750-px: the content should be aligned leb.
+
+For screens smaller than 750-px: the content should be aligned center.*/
+header {
+    background-color: blue;
+
+}
+
+/* For screens bigger than 750-px: should not exceed 30% of the width of its parent, and
+must be vertical
+
+For screens smaller than 750-px: should occupy 100% of the width of its parent and
+appear horizontal*/
+
+@media screen and (max-width: 750px) {
+
+}
