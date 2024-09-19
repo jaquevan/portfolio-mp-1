@@ -31,17 +31,13 @@ li{
     display: inline;
     padding-left: 2px;
     padding-right: 2px;
-    : none;
-
 }
 
-.drumming p {
-    text-align: center;
-}
-
-.drumming a {
-    color: #1a73e8;
-    text-decoration: none;
+img {
+    width: calc(30 + 2vw);
+    height: auto;
+    max-width: 100%;
+    display: block;
 }
 
 
