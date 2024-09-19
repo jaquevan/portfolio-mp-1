@@ -28,6 +28,15 @@ nav {
 
 }
 
+.drumming p {
+    text-align: center;
+}
+
+.drumming a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
 
 /* For screens bigger than 750-px: the content should be aligned leb.
 
