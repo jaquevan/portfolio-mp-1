@@ -2,11 +2,7 @@
 //most of these functions follow the same logic and just use integer operations to
 //make a simple JS calculator web app
 
-let first = document.getElementById("first").value;
-first = Number(first);
 
-let second = document.getElementById("second").value;
-second = Number(second);
 
   function displayResult(result) {
     let output = document.getElementById("output");
@@ -19,27 +15,52 @@ second = Number(second);
   }
 
   function myAdd(){
+    let first = document.getElementById("first").value;
+    first = Number(first);
+
+    let second = document.getElementById("second").value;
+    second = Number(second);
 
     let result = first + second;
     displayResult(result);
   }
 
   function mySub(){
+    let first = document.getElementById("first").value;
+    first = Number(first);
+
+    let second = document.getElementById("second").value;
+    second = Number(second);
 
     let result = first - second;
     displayResult(result);  }
 
   function myMultiply(){
+    let first = document.getElementById("first").value;
+    first = Number(first);
+
+    let second = document.getElementById("second").value;
+    second = Number(second);
 
     let result = first * second;
     displayResult(result);  }
 
   function myDivide(){
+    let first = document.getElementById("first").value;
+    first = Number(first);
+
+    let second = document.getElementById("second").value;
+    second = Number(second);
 
     let result = first / second;
     displayResult(result);  }
 
   function myPow() {
+    let first = document.getElementById("first").value;
+    first = Number(first);
+
+    let second = document.getElementById("second").value;
+    second = Number(second);
 
     let result = 1;
 
