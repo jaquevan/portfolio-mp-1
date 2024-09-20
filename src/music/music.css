@@ -1,0 +1,39 @@
+main {
+    background-color: mediumpurple;
+    border: mediumspringgreen 10px;
+    border-radius: 15px;
+    padding: 10px;
+
+}
+    .pages ul{
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 15px;
+        padding: 10px;
+        background-color: springgreen;
+        list-style-type: none;
+}
+
+body{
+
+    background-color: mintcream;
+
+    .drumming-photos img{
+        width: calc(30 + 2vw);
+        height: auto;
+        max-width: 100%;
+        display: block;
+    }
+}
+
+h2{
+    font-size: calc(11 + 3vw);
+}
+
+@media screen and (max-width: 1000px) {
+    .drumming-photos {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+}
+

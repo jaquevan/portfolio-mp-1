@@ -1,0 +1,57 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightsteelblue;
+
+}
+main{
+    border: 4px solid mediumpurple;
+    padding: 10px;
+    text-align: center;
+    font-family: "Comic Sans MS", Helvetica, sans-serif;}
+
+    ul{
+        display: flex;
+        border: 4px solid darkslateblue;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 2px;
+    }
+    li:hover{
+
+        background-color: greenyellow;
+        list-style-type: none;
+    }
+
+
+a{
+    text-decoration: none;
+    color: blue;
+}
+
+li{
+    display: inline;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+img {
+    width: calc(30 + 2vw);
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+
+/* For screens bigger than 750-px: the content should be aligned leb.
+
+For screens smaller than 750-px: the content should be aligned center.*/
+
+
+/* For screens bigger than 750-px: should not exceed 30% of the width of its parent, and
+must be vertical
+
+For screens smaller than 750-px: should occupy 100% of the width of its parent and
+appear horizontal*/
+
+@media screen and (max-width: 750px) {
+
+}
