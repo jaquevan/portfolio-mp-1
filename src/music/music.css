@@ -1,7 +1,7 @@
 
 body{
 
-    background-color: mintcream;
+    background-color: black;
 
     .drumming-photos img{
         width: calc(30 + 2vw);
@@ -22,32 +22,49 @@ a{
 }
 
 
-nav h1, nav p{
-    font-size: calc(11 + 3vw);
-    font-family: "Arial Rounded MT Bold", Arial, sans-serif;
-    text-align: center;
-}
-nav ul{
-    text-align: center;
-    display: block;
-    padding: 8px;
-    background: dodgerblue;
-    border: 5px solid darkslateblue;
+nav {
+
+    background: linear-gradient(to bottom,
+    lightsteelblue,
+    cadetblue,
+    steelblue,
+    teal,
+    black);
+    border: 5px solid white;
     border-radius: 15px;
-    font-family: Times, Arial, sans-serif;
-}
 
-li{
-    display: inline;
-    padding: 8px;
+    h1, p {
+        font-size: calc(11 + 3vw);
+        font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+        text-align: center;
+    }
 
-}
+    ul {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        padding: 8px;
+        margin: 0;
+        background: dodgerblue;
+        border: 5px solid darkslateblue;
+        border-radius: 15px;
+        font-family: Times, Arial, sans-serif;
+    }
 
-li:hover{
+    li {
+        display: inline-flex;
+        padding: 5px 20px;
+        align-items: center;
 
-    background-color: palegreen;
-    border-radius: 5px;
-    list-style-type: none;
+
+    }
+
+    li:hover {
+
+        background-color: palegreen;
+        border-radius: 5px;
+        list-style-type: none;
+    }
 }
 
 #credit{

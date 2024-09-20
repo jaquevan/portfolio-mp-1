@@ -1,23 +1,80 @@
+.header{
+    text-align: left;
+    background-color: blue;
+    border: 5px solid white;
+    border-radius: 15px;
+}
+
+nav{
 
     a{
         text-decoration: none;
         color: white;
     }
 
+    h1, p {
+        font-size: calc(11 + 3vw);
+        font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+        text-align: left;
+    }
+
+    ul {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        padding: 8px;
+        margin: 0;
+        background: dodgerblue;
+        border: 5px solid darkslateblue;
+        border-radius: 15px;
+        font-family: Times, Arial, sans-serif;
+    }
+
+    li {
+        display: inline-flex;
+        padding: 5px 20px;
+        align-items: center;
 
 
-    body{
+    }
 
-        background-color:slategray;
-        text-align: center;
+    li:hover {
 
-        button{
-            margin-left: 65%;
-            display: inline-block;
-            padding: 10px 20px;
+        background-color: palegreen;
+        border-radius: 5px;
+        list-style-type: none;
+    }
+}
+
+body {
+
+    background-color: teal;
+    text-align: center;
+    font-size: calc(1 + 2vw);
+
+
+    .github {
+
+        align-content: center;
+
+        img {
+            display: block;
+            border: 6px solid dimgrey;
+            border-radius: 70%;
+            width: calc(55% + 2vw);
+            height: auto;
+            margin: auto;
+
+        }
+
+
+        button {
+            display: block;
+            margin: 1% auto;
+            padding: 20px 20px;
             background-color: midnightblue;
             border: 2px solid yellow;
-            border-radius: 20px;
+            border-radius: 30px;
             color: white;
             font-family: "Agave Nerd Font Mono", Arial, sans-serif;
 
@@ -25,29 +82,63 @@
 
         button:hover {
             background-color: darkslateblue;
-
+            display: inline-block;
         }
+    }
+}
 
-    .github{
-        display: inline-block;
-        align-content: center;
-        gap: 20px;
+#credit{
+    color: blue;
+}
+
+.calculator{
+    font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+    background-image: url('../../public/images/beautiful-patterns-of-lightning-y9876tmtpwpcmvq0.gif');
+    background-repeat: repeat;
+    background-size: 100%;
+    padding-bottom: 20px;
+    color: white;
+    margin: auto;
+    border: 5px solid yellow;
+    border-radius: 15px;
+
+    label{
+        border: 3px solid yellow;
+        border-radius: 5px;
+        padding: 9px;
+    }
+    input{
+        color: white;
+        background-color: darkblue;
+        border-radius: 5px;
+        padding: 8px;
     }
 
+    button{
+        font-family: times, sans-serif;
+        background:lightskyblue;
+        margin: 20px;
+        padding-left: 5px;
+        border: 2px solid yellow;
+        border-radius: 80%;
+    }
+    button:hover{
+        background-color: yellow;
+        color: black;
+    }
+}
+.vegeta{
+    width: 30vw;
+    height: auto;
+    border: none;
+    margin-right: 0;
+    background: linear-gradient(to bottom,yellow,
+    white);
+    border-radius: 20px;
+
+}
     li {
         text-align: left;
-    }
-
-        img{
-            border: 6px solid white;
-            border-radius: 70%;
-            width: calc(55% + 2vw);
-            height: auto;
-            max-width: 100%;
-            margin-right: 80%;
-            display: inline-block;
-
-        }
     }
 
     h2 {
@@ -56,44 +147,156 @@
         color: rebeccapurple;
         font-size: 3vw;
     }
+/* styling for smaller screens */
 
+    @media screen and (max-width: 750px){
 
-    nav {
-
-        h1, p {
-            font-size: calc(11 + 3vw);
-            font-family: "Arial Rounded MT Bold", Arial, sans-serif;
-            text-align: center;
-        }
-
-        ul {
-            text-align: center;
-            display: block;
-            padding: 8px;
-            background: dodgerblue;
-            border: 5px solid darkslateblue;
+        /* this header class is used to differentiate the headers of big and small
+        screens. There is a difference in the centering and layout when the window
+        is stretched or minimized.*/
+        .header{
+            background: linear-gradient(to bottom,
+            lightsteelblue,
+            cadetblue,
+            steelblue,
+            teal,
+            white);
+            border: 5px solid white;
             border-radius: 15px;
-            font-family: Times, Arial, sans-serif;
+            text-align: center;
         }
 
-        li {
-            display: inline;
-            padding: 8px;
+        nav{
 
+            a{
+                text-decoration: none;
+                color: white;
+            }
+
+            h1, p {
+                font-size: calc(11 + 3vw);
+                font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+                text-align: center;
+            }
+
+            ul {
+                text-align: center;
+                display: flex;
+                flex-direction: row;
+                padding: 8px;
+                margin: 0;
+                background: dodgerblue;
+                border: 5px solid darkslateblue;
+                border-radius: 15px;
+                font-family: Times, Arial, sans-serif;
+            }
+
+            li {
+                display: inline-flex;
+                padding: 5px 20px;
+                align-items: center;
+
+
+            }
+
+            li:hover {
+
+                background-color: palegreen;
+                border-radius: 5px;
+                list-style-type: none;
+            }
         }
 
-        li:hover {
+        body {
 
-            background-color: palegreen;
-            border-radius: 5px;
-            list-style-type: none;
+            background-color: teal;
+            text-align: center;
+            font-size: calc(1 + 2vw);
+
+
+            .github {
+
+                align-content: center;
+
+                img {
+                    display: block;
+                    border: 6px solid dimgrey;
+                    border-radius: 70%;
+                    width: calc(55% + 2vw);
+                    height: auto;
+                    margin: auto;
+
+                }
+
+
+                button {
+                    display: block;
+                    margin: 1% auto;
+                    padding: 20px 20px;
+                    background-color: midnightblue;
+                    border: 2px solid yellow;
+                    border-radius: 30px;
+                    color: white;
+                    font-family: "Agave Nerd Font Mono", Arial, sans-serif;
+
+                }
+
+                button:hover {
+                    background-color: darkslateblue;
+                    display: inline-block;
+                }
+            }
         }
-    }
+
     #credit{
         color: blue;
     }
 
     .calculator{
-        background-color: yellow;
-        padding: 10px;
+        font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+        background-image: url('../../public/images/beautiful-patterns-of-lightning-y9876tmtpwpcmvq0.gif');
+        background-repeat: repeat;
+        background-size: 100%;
+        padding-bottom: 20px;
+        color: white;
+        margin: auto;
+        border: 5px solid yellow;
+        border-radius: 15px;
+
+        label{
+            border: 3px solid yellow;
+            border-radius: 5px;
+            padding: 9px;
+        }
+        input{
+            color: white;
+            background-color: darkblue;
+            border-radius: 5px;
+            padding: 8px;
+        }
+
+        button{
+            font-family: times, sans-serif;
+            background:lightskyblue;
+            margin: 20px;
+            padding-left: 5px;
+            border: 2px solid yellow;
+            border-radius: 80%;
+        }
+        button:hover{
+            background-color: yellow;
+            color: black;
+        }
+    }
+    .vegeta{
+        width: 30vw;
+        height: auto;
+        border: none;
+        margin-right: 0;
+        background: linear-gradient(to bottom,yellow,
+        white);
+        border-radius: 20px;
+
+    }
+
     }

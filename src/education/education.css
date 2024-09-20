@@ -1,50 +1,172 @@
-body{
-    background-color:mintcream;
+
+
+    /*border: 5px solid white;*/
+    /*border-radius: 15px;*/
+    /*background: linear-gradient(to bottom,*/
+    /*lightsteelblue,*/
+    /*cadetblue,*/
+    /*steelblue,*/
+    /*teal,*/
+    /*black);*/
+
+
+body {
+    background: antiquewhite;
 }
-
-h2 {
-    margin: auto;
-    text-align: center;
-    color: rebeccapurple;
-    font-size: 3vw;
-}
-
-a{
-    text-decoration: none;
-    color: white;
-}
-
-nav {
-
-    h1, p {
-        font-size: calc(11 + 3vw);
-        font-family: "Arial Rounded MT Bold", Arial, sans-serif;
-        text-align: center;
+@media screen and(width: 751px) {
+    body {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
     }
 
-    ul {
-        text-align: center;
-        display: block;
-        padding: 8px;
-        background: dodgerblue;
-        border: 5px solid darkslateblue;
+    head {
+        text-align: left;
+        background-color: lightgray;
+        border: 5px solid white;
         border-radius: 15px;
-        font-family: Times, Arial, sans-serif;
     }
 
-    li {
-        display: inline;
-        padding: 8px;
+    nav {
+        max-width: 25%;
+
+        h1, p {
+            font-size: calc(11 + 3vw);
+            font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+            text-align: left;
+        }
+
+        ul {
+            text-align: left;
+            max-width: 30%;
+            display: flex;
+            flex-direction: column;
+            padding: 8px;
+            margin: 0;
+            background: dodgerblue;
+            border: 5px solid darkslateblue;
+            border-radius: 15px;
+            font-family: Times, Arial, sans-serif;
+        }
+
+        li {
+            display: block;
+            padding: 10px;
+        }
+
+        li:hover {
+
+            background-color: palegreen;
+            border-radius: 5px;
+            list-style-type: none;
+        }
+    }
+
+    body {
+
+        background-color:antiquewhite;
+
+        img{
+            width: 18vw;
+            height: auto;
+            margin: auto;
+            display: block;
+            border: 3px solid black;
+            border-radius: 100%;
+        }
+
+        h1 {
+            text-align: center;
+
+        }
+        h2 {
+            margin: auto;
+            text-align: center;
+            color: black;
+            font-size: 3vw;
+        }
+        h4 {
+            text-align:center;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    footer {
+
+        #credit{
+            color: blue;
+        }
 
     }
 
-    li:hover {
 
-        background-color: palegreen;
-        border-radius: 5px;
-        list-style-type: none;
-    }
 }
-#credit{
-    color: blue;
-}
+
+
+/* for screens smaller than 750 px, the nav bar will be displayed horizontally*/
+@media screen and (max-width: 750px){
+
+    head {
+        .header h1{
+            text-align: center;
+
+        }
+    }
+
+        img{
+            width: 18vw;
+            height: auto;
+            margin: auto;
+            display: block;
+            border: 3px solid black;
+            border-radius: 100%;
+        }
+    }
+    nav {
+
+        h1, p{
+            font-size: calc(11 + 3vw);
+            font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+            text-align: center;
+        }
+
+        ul {
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            padding: 8px;
+            margin: 0;
+            background: dodgerblue;
+            border: 5px solid darkslateblue;
+            border-radius: 15px;
+            font-family: Times, Arial, sans-serif;
+        }
+
+        li {
+            display: inline-flex;
+            padding: 10px;
+            align-items: center;
+
+
+        }
+        li:hover {
+
+            background-color: palegreen;
+            border-radius: 5px;
+            list-style-type: none;
+        }
+    }
+
+    body {
+        text-align: center;
+        color: black;
+
+        li {
+            text-align: left;
+    }
+    }
+

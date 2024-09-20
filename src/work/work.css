@@ -1,6 +1,9 @@
 body{
-    background-color:mintcream;
+    margin: 0;
+    padding: 0;
+    background-color:steelblue;
 }
+
 
 h2 {
     margin: auto;
@@ -17,6 +20,15 @@ a{
 
 nav {
 
+    background: linear-gradient(to bottom,
+    lightsteelblue,
+    cadetblue,
+    steelblue,
+    teal,
+    black);
+    border: 5px solid white;
+    border-radius: 15px;
+
     h1, p {
         font-size: calc(11 + 3vw);
         font-family: "Arial Rounded MT Bold", Arial, sans-serif;
@@ -25,8 +37,10 @@ nav {
 
     ul {
         text-align: center;
-        display: block;
+        display: flex;
+        flex-direction: row;
         padding: 8px;
+        margin: 0;
         background: dodgerblue;
         border: 5px solid darkslateblue;
         border-radius: 15px;
@@ -34,8 +48,10 @@ nav {
     }
 
     li {
-        display: inline;
-        padding: 8px;
+        display: inline-flex;
+        padding: 5px 20px;
+        align-items: center;
+
 
     }
 
