@@ -4,90 +4,104 @@
         <meta charset="UTF-8">
         <title>Title</title>
         <link rel="stylesheet" href="projects.css">
-    <div class ="header">
-        <h1>Evan Jaquez</h1>
-        <p>WELCOME TO MY INNER VORTEX - This is my first portfolio</p>
 
-    </div>
+    <body>
+        <div id="page-wrapper">
+            <header>
+                <div class ="header">
+                    <h1>Evan Jaquez</h1>
+                    <p>WELCOME TO MY INNER VORTEX - This is my first portfolio</p>
+
+                </div>
+
+            </header>
+
+            <div id="container">
+
+                <nav style="font-size: calc(5px + 1.5vw);">
+
+
+
+                    <ul> <!-- list elements of sep pages within the web resume nested within the ul tag-->
+                        <li><a href = "../index/index.html">Home</a></li>
+                        <li><a href = "../education/edu.html">Education</a></li>
+                        <li><a href = "../work/work.html">Employment</a></li>
+                        <li><a href = "../projects/projects.html">Projects</a></li>
+                        <li><a href = "../achievements/achievements.html">Achievements</a></li>
+                        <li><a href = "../music/music.html">Music & Drumming</a></li>
+                    </ul>
+                </nav>
+
+                <main style="font-size: calc(5px + 1.5vw);">
+
+
+                    <div class="github">
+
+                        <img alt="my pfp" src="../../public/pfp.png" target="_blank">
+
+                        <a href="https://github.com/jaquevan">
+
+                            <button >Github - jaquevan </button>
+
+                        </a>
+                        <h4> Welcome to my projects page! Although uninhabited by fun interesting projects,
+                            I hope to fill it up with things I find interesting and can be proud of. Here you can find a link to my
+                            github profile, a simple JS calculator, and descriptions of projects.</h4>
+
+                    </div>
+
+                    <br><br><br><br>
+
+                    <h2>Projects</h2>
+
+                    <h3>FinOctopus - BostonHacks 2023 - MLH Award Recipient</h3>
+                    <h4><em>Python, HTML, CSS, Streamlit, Pychart, OpenAi, Nessie API</em></h4>
+
+                    <ul>
+                        <li>
+                            Created a web app with a team in which when the user provides a Capital One account number, visual data
+                            representations of spending categories and recent purchases
+                        </li>
+                        <li>
+                            Allowed users to chat with an AI assistant about their account history and financial endeavors
+                        </li>
+
+                    </ul>
+
+                    <br>
+                    <img class="vegeta" alt="image of vegeta" src="../../public/images/vegeta_ssj_blue_2_transparent_by_ggreuz_dayf7hr-fullview.png">
+                    <div class="calculator">
+                        <h3>Vegeta's JavaScript Calculator:</h3>
+                        <h4>Input any two numbers and Vegeta is able to do the math:</h4>
+
+                        <label for="first"> Give the prince of all saiyans a number: </label><input id="first">
+                        <br><br>
+                        <label for="second"> Give him another glorius number: </label><input id="second">
+                        <br><br>
+
+                        <button id="add" onclick="myAdd()">+</button>
+                        <button id="sub" onclick="mySub()">-</button>
+                        <button id="mul" onclick="myMultiply()">*</button>
+                        <button id="divide" onclick="myDivide()">/</button>
+                        <button id="power" onclick="myPow()">Power</button>
+                        <button id="clr" onclick="myClear()">Clear</button>
+                        <div id="output"></div>
+
+                    </div>
+
+                    <script src="projects.js"></script>
+
+                </main>
+
+            </div>
+
+            <footer>
+                All Rights Reserved by <em>Evan Jaquez</em>
+                <a id="credit" href="../credits/credits.html">Credits</a> &copy;
+            </footer>
+
+        </div>
+    </body>
     </head>
 
-    <nav style="font-size: calc(5px + 1.5vw);">
-
-
-
-        <ul> <!-- list elements of sep pages within the web resume nested within the ul tag-->
-            <li><a href = "../index/index.html">Home</a></li>
-            <li><a href = "../education/edu.html">Education</a></li>
-            <li><a href = "../work/work.html">Employment</a></li>
-            <li><a href = "../projects/projects.html">Projects</a></li>
-            <li><a href = "../achievements/achievements.html">Achievements</a></li>
-            <li><a href = "../music/music.html">Music & Drumming</a></li>
-        </ul>
-    </nav>
-    <br>
-    <main style="font-size: calc(5px + 1.5vw);">
-
-
-    <div class="github">
-
-        <img alt="my pfp" src="../../public/pfp.png" target="_blank">
-
-        <a href="https://github.com/jaquevan">
-
-            <button >Github - jaquevan </button>
-
-        </a>
-        <h4> Welcome to my projects page! Although uninhabited by fun interesting projects,
-        I hope to fill it up with things I find interesting and can be proud of. Here you can find a link to my
-        github profile, a simple JS calculator, and descriptions of projects.</h4>
-
-    </div>
-
-    <br><br>
-
-    <h2>Projects</h2>
-
-    <h3>FinOctopus - BostonHacks 2023 - MLH Award Recipient</h3>
-    <h4><em>Python, HTML, CSS, Streamlit, Pychart, OpenAi, Nessie API</em></h4>
-
-    <ul>
-        <li>
-            Created a web app with a team in which when the user provides a Capital One account number, visual data
-            representations of spending categories and recent purchases
-        </li>
-        <li>
-            Allowed users to chat with an AI assistant about their account history and financial endeavors
-        </li>
-
-    </ul>
-
-    <br>
-    <img class="vegeta" alt="image of vegeta" src="../../public/images/vegeta_ssj_blue_2_transparent_by_ggreuz_dayf7hr-fullview.png">
-    <div class="calculator">
-        <h3>Vegeta's JavaScript Calculator:</h3>
-        <h4>Input any two numbers and Vegeta is able to do the math:</h4>
-
-        <label for="first"> Give the prince of all saiyans a number: </label><input id="first">
-        <br><br>
-        <label for="second"> Give him another glorius number: </label><input id="second">
-        <br><br>
-
-        <button id="add" onclick="myAdd()">+</button>
-        <button id="sub" onclick="mySub()">-</button>
-        <button id="mul" onclick="myMultiply()">*</button>
-        <button id="divide" onclick="myDivide()">/</button>
-        <button id="power" onclick="myPow()">Power</button>
-        <button id="clr" onclick="myClear()">Clear</button>
-        <div id="output"></div>
-
-    </div>
-
-        <script src="projects.js"></script>
-
-        </main>
-    <br><br>
-    <footer>
-        All Rights Reserved by <em>Evan Jaquez</em>
-        <a id="credit" href="../credits/credits.html">Credits</a> &copy;
-    </footer>
 </html>

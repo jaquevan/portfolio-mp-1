@@ -1,29 +1,46 @@
+
 .header{
-    text-align: left;
-    background-color: blue;
+    background: linear-gradient(to bottom,
+    lightsteelblue,
+    cadetblue,
+    steelblue,
+    teal,
+    white);
     border: 5px solid white;
+    padding: 10px;
     border-radius: 15px;
-}
-
-nav{
-
-    a{
-        text-decoration: none;
-        color: white;
-    }
+    text-align: left;
 
     h1, p {
         font-size: calc(11 + 3vw);
         font-family: "Arial Rounded MT Bold", Arial, sans-serif;
         text-align: left;
     }
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+}
+
+#page-wrapper {
+    width: 100%;
+
+}
+
+nav{
+    float: left;
+    line-height: 5;
+    height: 800px;
+    a{
+        text-decoration: none; /*gets rid of the link appearance*/
+        color: white;
+        padding: 2px;
+    }
+
 
     ul {
         text-align: left;
-        display: flex;
-        flex-direction: column;
-        padding: 8px;
-        margin: 0;
         background: dodgerblue;
         border: 5px solid darkslateblue;
         border-radius: 15px;
@@ -31,22 +48,24 @@ nav{
     }
 
     li {
-        display: inline-flex;
-        padding: 5px 20px;
+        display: block;
+        flex-direction: row;
+        padding: 4px 10px;
         align-items: center;
 
 
     }
-
     li:hover {
-
         background-color: palegreen;
         border-radius: 5px;
         list-style-type: none;
+        margin-right: auto;
+        margin-left: 0 ;
+        border: 5px solid darkslateblue;
     }
 }
 
-body {
+    body{
 
     background-color: teal;
     text-align: center;
@@ -147,6 +166,14 @@ body {
         color: rebeccapurple;
         font-size: 3vw;
     }
+
+
+
+
+
+
+
+
 /* styling for smaller screens */
 
     @media screen and (max-width: 750px){
@@ -154,6 +181,11 @@ body {
         /* this header class is used to differentiate the headers of big and small
         screens. There is a difference in the centering and layout when the window
         is stretched or minimized.*/
+
+        #container {
+            flex-direction: column;
+        }
+
         .header{
             background: linear-gradient(to bottom,
             lightsteelblue,
@@ -164,27 +196,26 @@ body {
             border: 5px solid white;
             border-radius: 15px;
             text-align: center;
-        }
-
-        nav{
-
-            a{
-                text-decoration: none;
-                color: white;
-            }
 
             h1, p {
                 font-size: calc(11 + 3vw);
                 font-family: "Arial Rounded MT Bold", Arial, sans-serif;
                 text-align: center;
             }
+        }
+        nav{
+            a{
+                text-decoration: none;
+                color: white;
+            }
 
-            ul {
+            ul{
                 text-align: center;
                 display: flex;
                 flex-direction: row;
+
                 padding: 8px;
-                margin: 0;
+
                 background: dodgerblue;
                 border: 5px solid darkslateblue;
                 border-radius: 15px;
@@ -192,9 +223,11 @@ body {
             }
 
             li {
-                display: inline-flex;
+                display: flex;
+                flex-direction: column;
                 padding: 5px 20px;
                 align-items: center;
+                margin: auto;
 
 
             }
