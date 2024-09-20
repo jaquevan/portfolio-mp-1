@@ -1,0 +1,99 @@
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+
+
+    body{
+
+        background-color:slategray;
+        text-align: center;
+
+        button{
+            margin-left: 65%;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: midnightblue;
+            border: 2px solid yellow;
+            border-radius: 20px;
+            color: white;
+            font-family: "Agave Nerd Font Mono", Arial, sans-serif;
+
+        }
+
+        button:hover {
+            background-color: darkslateblue;
+
+        }
+
+    .github{
+        display: inline-block;
+        align-content: center;
+        gap: 20px;
+    }
+
+    li {
+        text-align: left;
+    }
+
+        img{
+            border: 6px solid white;
+            border-radius: 70%;
+            width: calc(55% + 2vw);
+            height: auto;
+            max-width: 100%;
+            margin-right: 80%;
+            display: inline-block;
+
+        }
+    }
+
+    h2 {
+        margin: auto;
+        text-align: center;
+        color: rebeccapurple;
+        font-size: 3vw;
+    }
+
+
+    nav {
+
+        h1, p {
+            font-size: calc(11 + 3vw);
+            font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+            text-align: center;
+        }
+
+        ul {
+            text-align: center;
+            display: block;
+            padding: 8px;
+            background: dodgerblue;
+            border: 5px solid darkslateblue;
+            border-radius: 15px;
+            font-family: Times, Arial, sans-serif;
+        }
+
+        li {
+            display: inline;
+            padding: 8px;
+
+        }
+
+        li:hover {
+
+            background-color: palegreen;
+            border-radius: 5px;
+            list-style-type: none;
+        }
+    }
+    #credit{
+        color: blue;
+    }
+
+    .calculator{
+        background-color: yellow;
+        padding: 10px;
+    }

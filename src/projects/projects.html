@@ -3,23 +3,35 @@
     <head>
         <meta charset="UTF-8">
         <title>Title</title>
-        <link rel="stylesheet" href="../informative.css">
+        <link rel="stylesheet" href="projects.css">
     </head>
-    <main>
+
+    <nav style="font-size: calc(5px + 1.5vw);">
+
         <h1>Evan Jaquez</h1>
         <p>WELCOME TO MY INNER VORTEX - This is my first portfolio</p>
         <br>
+
         <ul> <!-- list elements of sep pages within the web resume nested within the ul tag-->
             <li><a href = "../index/index.html">Home</a></li>
-            <li><a href = "projects.html">Projects</a></li>
             <li><a href = "../education/edu.html">Education</a></li>
             <li><a href = "../work/work.html">Employment</a></li>
+            <li><a href = "../projects/projects.html">Projects</a></li>
+            <li><a href = "../achievements/achievements.html">Achievements</a></li>
             <li><a href = "../music/music.html">Music & Drumming</a></li>
-            <li><a href = "../hobbies.html">Hobbies</a></li>
         </ul>
-    </main>
+    </nav>
 
-    <body>
+    <body style="font-size: calc(5px + 1.5vw);">
+
+
+    <div class="github">
+
+        <img alt="my pfp" src="../../public/pfp.png">
+
+        <button>Github - jaquevan </button>
+
+    </div>
 
     <br><br>
 
@@ -41,28 +53,31 @@
 
     <br>
 
-    <h3>JavaScript Calculator:</h3>
-    <h4>Input any two numbers and try out some of the functions below:</h4>
+    <div class="calculator">
+        <h3>JavaScript Calculator:</h3>
+        <h4>Input any two numbers and try out some of the functions below:</h4>
 
-    <label for="first"> Give me a number: </label><input id="first">
-    <br><br>
-    <label for="second"> Give me another number: </label><input id="second">
-    <br>
+        <label for="first"> Give me a number: </label><input id="first">
+        <br><br>
+        <label for="second"> Give me another number: </label><input id="second">
+        <br>
 
-    <button id="add" onclick="myAdd()">+</button>
-    <button id="sub" onclick="mySub()">-</button>
-    <button id="mul" onclick="myMultiply()">*</button>
-    <button id="divide" onclick="myDivide()">/</button>
-    <button id="power" onclick="myPow()">Power</button>
-    <button id="clr" onclick="myClear()">Clear</button>
-    <div id="output"></div>
+        <button id="add" onclick="myAdd()">+</button>
+        <button id="sub" onclick="mySub()">-</button>
+        <button id="mul" onclick="myMultiply()">*</button>
+        <button id="divide" onclick="myDivide()">/</button>
+        <button id="power" onclick="myPow()">Power</button>
+        <button id="clr" onclick="myClear()">Clear</button>
+        <div id="output"></div>
 
+    </div>
 
-    <script src="projects.js"></script>
-    </body>
+        <script src="projects.js"></script>
+
+        </body>
 
     <footer>
-        All Rights Reserved by <em>Evan Jaquez </em>
-        <a href="credits.html">Credits</a> &copy;
+        All Rights Reserved by <em>Evan Jaquez</em>
+        <a id="credit" href="../credits/credits.html">Credits</a> &copy;
     </footer>
 </html>

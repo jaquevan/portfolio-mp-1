@@ -1,0 +1,51 @@
+body{
+    background-color:mintcream;
+}
+
+h2 {
+    margin: auto;
+    text-align: center;
+    color: rebeccapurple;
+    font-size: 3vw;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+nav {
+
+    h1, p {
+        font-size: calc(11 + 3vw);
+        font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+        text-align: center;
+    }
+
+    ul {
+        text-align: center;
+        display: block;
+        padding: 8px;
+        background: dodgerblue;
+        border: 5px solid darkslateblue;
+        border-radius: 15px;
+        font-family: Times, Arial, sans-serif;
+    }
+
+    li {
+        display: inline;
+        padding: 8px;
+
+    }
+
+    li:hover {
+
+        background-color: palegreen;
+        border-radius: 5px;
+        list-style-type: none;
+    }
+}
+#credit{
+    color: blue;
+}

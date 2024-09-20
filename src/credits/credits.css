@@ -1,21 +1,4 @@
 
-body{
-
-    background-color: mintcream;
-
-    .drumming-photos img{
-        width: calc(30 + 2vw);
-        height: auto;
-        max-width: 100%;
-        display: block;
-    }
-}
-
-h2{
-    font-size: calc(11 + 3vw);
-}
-
-
 a{
     text-decoration: none;
     color: white;
@@ -49,16 +32,6 @@ li:hover{
     border-radius: 5px;
     list-style-type: none;
 }
-
 #credit{
     color: blue;
 }
-
-/*@media screen and (max-width: 3000px) {*/
-/*    .drumming-photos {*/
-/*        display: flex;*/
-/*        flex-direction: column;*/
-/*        margin: auto;*/
-/*    }*/
-/*}*/
-

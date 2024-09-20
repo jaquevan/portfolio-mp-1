@@ -1,57 +1,73 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: lightsteelblue;
+    /**{*/
+    /*    margin: 0;*/
+    /*    box-sizing: border-box;*/
+    /*}*/
 
-}
-main{
-    border: 4px solid mediumpurple;
-    padding: 10px;
-    text-align: center;
-    font-family: "Comic Sans MS", Helvetica, sans-serif;}
 
-    ul{
-        display: flex;
-        border: 4px solid darkslateblue;
-        font-family: Arial, Helvetica, sans-serif;
-        padding: 2px;
+    body{
+        font-family: Times, Arial, sans-serif;
+        background-color: lightsteelblue;
+        text-align: center;
+
+        img{
+
+            width: calc(55% + 2vw);
+            height: auto;
+            max-width: 100%;
+            display: inline-block;
+            border: 6px solid black;
+        }
     }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    /* this makes the credits link blue but keeps my nav links white*/
+    #credit{
+        color: blue;
+    }
+
+    nav h1, nav p{
+        font-size: calc(11 + 3vw);
+        font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+        text-align: center;
+    }
+    nav ul{
+        text-align: center;
+        display: block;
+        padding: 8px;
+        background: dodgerblue;
+        border: 5px solid darkslateblue;
+        border-radius: 15px;
+        font-family: Times, Arial, sans-serif;
+    }
+
+    li{
+        display: inline;
+        padding: 8px;
+
+    }
+
     li:hover{
 
-        background-color: greenyellow;
+        background-color: palegreen;
+        border-radius: 5px;
         list-style-type: none;
     }
 
 
-a{
-    text-decoration: none;
-    color: blue;
-}
+    /* For screens bigger than 750-px: the content should be aligned leb.
 
-li{
-    display: inline;
-    padding-left: 2px;
-    padding-right: 2px;
-}
-
-img {
-    width: calc(30 + 2vw);
-    height: auto;
-    max-width: 100%;
-    display: block;
-}
+    For screens smaller than 750-px: the content should be aligned center.*/
 
 
-/* For screens bigger than 750-px: the content should be aligned leb.
+    /* For screens bigger than 750-px: should not exceed 30% of the width of its parent, and
+    must be vertical
 
-For screens smaller than 750-px: the content should be aligned center.*/
+    For screens smaller than 750-px: should occupy 100% of the width of its parent and
+    appear horizontal*/
 
+    @media screen and (max-width: 750px) {
 
-/* For screens bigger than 750-px: should not exceed 30% of the width of its parent, and
-must be vertical
-
-For screens smaller than 750-px: should occupy 100% of the width of its parent and
-appear horizontal*/
-
-@media screen and (max-width: 750px) {
-
-}
+    }
