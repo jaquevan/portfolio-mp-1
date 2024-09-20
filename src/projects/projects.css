@@ -1,4 +1,15 @@
 
+body {
+    background-color: white;
+    text-align: center;
+    font-size: calc(1 + 2vw);
+}
+
+h1, p {
+    font-size: calc(11 + 3vw);
+    font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+    text-align: left;
+}
 .header{
     background: linear-gradient(to bottom,
     lightsteelblue,
@@ -6,146 +17,146 @@
     steelblue,
     teal,
     white);
+
+    border-radius: 18%;
     border: 5px solid white;
-    padding: 10px;
-    border-radius: 15px;
+
+    padding: 1%;
     text-align: left;
 
-    h1, p {
-        font-size: calc(11 + 3vw);
-        font-family: "Arial Rounded MT Bold", Arial, sans-serif;
-        text-align: left;
-    }
+    width: 95%;
+
 }
+
+
+.github {
+
+    align-content: center;
+}
+
+.github img {
+    display: block;
+    border: 6px solid dimgrey;
+    border-radius: 70%;
+    width: calc(55% + 2vw);
+    height: auto;
+    margin: auto;
+
+}
+
+
+.github button {
+    display: block;
+    margin: 1% auto;
+    padding: 20px 20px;
+    background-color: midnightblue;
+    border: 2px solid yellow;
+    border-radius: 25%;
+    color: white;
+    font-family: "Agave Nerd Font Mono", Arial, sans-serif;
+
+}
+
+.github button:hover {
+    background-color: darkslateblue;
+    display: inline-block;
+
+}
+
 
 #container {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    align-content: center;
+    padding: 0;
 }
 
 #page-wrapper {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin: 0 auto;
+    background-color: teal ;
+}
+
+nav {
+    border: 4px solid darkslateblue;
+    border-radius: 10%;
+    background: dodgerblue;
+
+
+
+}
+nav a{
+    text-decoration: none; /*gets rid of the link appearance*/
+    color: white;
+    padding: 2%;
+}
+
+
+nav ul {
+    text-align: left;
+    font-family: Times, Arial, sans-serif;
+    margin: 0;
 
 }
 
-nav{
-    float: left;
-    line-height: 5;
-    height: 800px;
-    a{
-        text-decoration: none; /*gets rid of the link appearance*/
-        color: white;
-        padding: 2px;
-    }
+nav li {
+    display: flex;
+    flex-direction: row;
+    padding: 2% 5%;
+    margin: auto;
 
 
-    ul {
-        text-align: left;
-        background: dodgerblue;
-        border: 5px solid darkslateblue;
-        border-radius: 15px;
-        font-family: Times, Arial, sans-serif;
-    }
-
-    li {
-        display: block;
-        flex-direction: row;
-        padding: 4px 10px;
-        align-items: center;
-
-
-    }
-    li:hover {
-        background-color: palegreen;
-        border-radius: 5px;
-        list-style-type: none;
-        margin-right: auto;
-        margin-left: 0 ;
-        border: 5px solid darkslateblue;
-    }
+}
+nav li:hover {
+    background-color: palegreen;
+    border-radius: 5%;
+    list-style-type: none;
+    margin-right: auto;
+    margin-left: 0 ;
+    border: 5px solid darkslateblue;
 }
 
-    body{
 
-    background-color: teal;
-    text-align: center;
-    font-size: calc(1 + 2vw);
-
-
-    .github {
-
-        align-content: center;
-
-        img {
-            display: block;
-            border: 6px solid dimgrey;
-            border-radius: 70%;
-            width: calc(55% + 2vw);
-            height: auto;
-            margin: auto;
-
-        }
-
-
-        button {
-            display: block;
-            margin: 1% auto;
-            padding: 20px 20px;
-            background-color: midnightblue;
-            border: 2px solid yellow;
-            border-radius: 30px;
-            color: white;
-            font-family: "Agave Nerd Font Mono", Arial, sans-serif;
-
-        }
-
-        button:hover {
-            background-color: darkslateblue;
-            display: inline-block;
-        }
-    }
-}
-
-#credit{
-    color: blue;
-}
-
-.calculator{
+.calculator {
     font-family: "Arial Rounded MT Bold", Arial, sans-serif;
     background-image: url('../../public/images/beautiful-patterns-of-lightning-y9876tmtpwpcmvq0.gif');
     background-repeat: repeat;
     background-size: 100%;
-    padding-bottom: 20px;
+    padding-bottom: 5%;
     color: white;
     margin: auto;
     border: 5px solid yellow;
-    border-radius: 15px;
-
-    label{
-        border: 3px solid yellow;
-        border-radius: 5px;
-        padding: 9px;
-    }
-    input{
-        color: white;
-        background-color: darkblue;
-        border-radius: 5px;
-        padding: 8px;
-    }
-
-    button{
-        font-family: times, sans-serif;
-        background:lightskyblue;
-        margin: 20px;
-        padding-left: 5px;
-        border: 2px solid yellow;
-        border-radius: 80%;
-    }
-    button:hover{
-        background-color: yellow;
-        color: black;
-    }
+    border-radius: 5%;
 }
+
+.calculator label{
+    border: 3px solid yellow;
+    border-radius: 5%;
+    padding: 9px;
+}
+.calculator input{
+    color: white;
+    background-color: lightskyblue;
+    border-radius: 5%;
+    padding: 8px;
+}
+
+.calculator button{
+    font-family: times, sans-serif;
+    background:lightskyblue;
+    margin: 2%;
+    padding-left: 1%;
+    border: 2px solid yellow;
+    border-radius: 80%;
+}
+.calculator button:hover{
+    background-color: yellow;
+    color: black;
+}
+
 .vegeta{
     width: 30vw;
     height: auto;
@@ -153,183 +164,50 @@ nav{
     margin-right: 0;
     background: linear-gradient(to bottom,yellow,
     white);
-    border-radius: 20px;
+    border-radius: 15%;
 
 }
-    li {
-        text-align: left;
-    }
-
-    h2 {
-        margin: auto;
-        text-align: center;
-        color: rebeccapurple;
-        font-size: 3vw;
-    }
-
-
-
-
-
-
-
 
 /* styling for smaller screens */
 
-    @media screen and (max-width: 750px){
+@media screen and (max-width: 750px){
 
-        /* this header class is used to differentiate the headers of big and small
-        screens. There is a difference in the centering and layout when the window
-        is stretched or minimized.*/
+    /* this header class is used to differentiate the headers of big and small
+    screens. There is a difference in the centering and layout when the window
+    is stretched or minimized.
 
-        #container {
-            flex-direction: column;
-        }
+    need to changed the squeezing and need to change the nav bar */
 
-        .header{
-            background: linear-gradient(to bottom,
-            lightsteelblue,
-            cadetblue,
-            steelblue,
-            teal,
-            white);
-            border: 5px solid white;
-            border-radius: 15px;
-            text-align: center;
-
-            h1, p {
-                font-size: calc(11 + 3vw);
-                font-family: "Arial Rounded MT Bold", Arial, sans-serif;
-                text-align: center;
-            }
-        }
-        nav{
-            a{
-                text-decoration: none;
-                color: white;
-            }
-
-            ul{
-                text-align: center;
-                display: flex;
-                flex-direction: row;
-
-                padding: 8px;
-
-                background: dodgerblue;
-                border: 5px solid darkslateblue;
-                border-radius: 15px;
-                font-family: Times, Arial, sans-serif;
-            }
-
-            li {
-                display: flex;
-                flex-direction: column;
-                padding: 5px 20px;
-                align-items: center;
-                margin: auto;
-
-
-            }
-
-            li:hover {
-
-                background-color: palegreen;
-                border-radius: 5px;
-                list-style-type: none;
-            }
-        }
-
-        body {
-
-            background-color: teal;
-            text-align: center;
-            font-size: calc(1 + 2vw);
-
-
-            .github {
-
-                align-content: center;
-
-                img {
-                    display: block;
-                    border: 6px solid dimgrey;
-                    border-radius: 70%;
-                    width: calc(55% + 2vw);
-                    height: auto;
-                    margin: auto;
-
-                }
-
-
-                button {
-                    display: block;
-                    margin: 1% auto;
-                    padding: 20px 20px;
-                    background-color: midnightblue;
-                    border: 2px solid yellow;
-                    border-radius: 30px;
-                    color: white;
-                    font-family: "Agave Nerd Font Mono", Arial, sans-serif;
-
-                }
-
-                button:hover {
-                    background-color: darkslateblue;
-                    display: inline-block;
-                }
-            }
-        }
-
-    #credit{
-        color: blue;
+    header .header{
+        text-align: center;
     }
-
-    .calculator{
-        font-family: "Arial Rounded MT Bold", Arial, sans-serif;
-        background-image: url('../../public/images/beautiful-patterns-of-lightning-y9876tmtpwpcmvq0.gif');
-        background-repeat: repeat;
-        background-size: 100%;
-        padding-bottom: 20px;
-        color: white;
-        margin: auto;
-        border: 5px solid yellow;
-        border-radius: 15px;
-
-        label{
-            border: 3px solid yellow;
-            border-radius: 5px;
-            padding: 9px;
-        }
-        input{
-            color: white;
-            background-color: darkblue;
-            border-radius: 5px;
-            padding: 8px;
-        }
-
-        button{
-            font-family: times, sans-serif;
-            background:lightskyblue;
-            margin: 20px;
-            padding-left: 5px;
-            border: 2px solid yellow;
-            border-radius: 80%;
-        }
-        button:hover{
-            background-color: yellow;
-            color: black;
-        }
+    #container {
+        flex-direction: column;
     }
-    .vegeta{
-        width: 30vw;
-        height: auto;
-        border: none;
-        margin-right: 0;
-        background: linear-gradient(to bottom,yellow,
-        white);
-        border-radius: 20px;
+    nav {
+        width: 100%;
 
     }
 
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 1%;
+        width: 100%;
+        text-align: center;
     }
+
+
+   nav li{
+        padding-left: 4%;
+        padding-right: 4%;
+        align-items: center;
+    }
+
+}
+
+
+
+
+
