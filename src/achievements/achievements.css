@@ -1,64 +1,182 @@
-body{
-    background-color:midnightblue;
+*{
+    box-sizing: border-box;
+    margin: 0;
 }
 
-h2 {
-    margin: auto;
+body {
+    background-color: white;
     text-align: center;
-    color: rebeccapurple;
-    font-size: 3vw;
+    font-size: calc(1 + 2vw);
 }
 
-a{
-    text-decoration: none;
-    color: white;
+h1, p{
+    font-size: calc(20% + 3vw);
+    font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+    text-align: left;
+}
+
+h2{
+    color: midnightblue;
+    font-size: calc(20% + 2.5vw);
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    padding-bottom: 2%;
+    font-size: calc(20% + 2.5vw);
+}
+h4 {
+    padding-bottom: 3%;
+}
+
+ul {
+    padding-bottom: 3%;
+    list-style-type: none;
 }
 
 
-nav {
 
+
+#container h1{
+    margin-top: 5%;
+    text-align: center;
+    font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+}
+#container p{
+    text-align: center;
+    padding: 2%;
+}
+#container {
+    height: 170vh;
+}
+.header{
     background: linear-gradient(to bottom,
     lightsteelblue,
     cadetblue,
     steelblue,
     teal,
-    black);
-    border: 5px solid white;
-    border-radius: 15px;
+    white);
 
-    h1, p {
-        font-size: calc(11 + 3vw);
-        font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+    border: 3px solid white;
+
+    padding: 0;
+    margin: 0 auto;
+    text-align: left;
+
+    width: 100%;
+
+}
+#page-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin: 0 auto;
+    background-color: dimgrey; ;
+}
+#container{
+    font-size: calc(3px + 2vw);
+    font-family: Times, Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+
+}
+
+nav {
+    width: 25%;
+    border: 10px solid darkslateblue;
+    border-radius: 5%;
+    padding: 0;
+    background: dodgerblue;
+
+}
+nav a{
+    text-decoration: none; /*gets rid of the link appearance*/
+    color: white;
+}
+
+
+nav ul {
+    text-align: left;
+    font-family: Times, Arial, sans-serif;
+    padding: 0;
+    list-style-type: none;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+nav li {
+    border: 3px solid white;
+    border-radius: 5%;
+    padding: 3% 1%;
+    margin: 10vh 2%;
+
+
+}
+
+nav li:hover {
+    color: white;
+    background-color: palegreen;
+    border-radius: 20%;
+    list-style-type: none;
+    padding: 0;
+    border: 3px solid darkslateblue;
+}
+
+/* For screens bigger than 750-px: the content should be aligned leb.
+
+For screens smaller than 750-px: the content should be aligned center.*/
+
+
+/* For screens bigger than 750-px: should not exceed 30% of the width of its parent, and
+must be vertical
+
+For screens smaller than 750-px: should occupy 100% of the width of its parent and
+appear horizontal*/
+
+@media screen and (max-width: 750px) {
+
+    /* this header class is used to differentiate the headers of big and small
+    screens. There is a difference in the centering and layout when the window
+    is stretched or minimized.
+
+    need to changed the squeezing and need to change the nav bar */
+    .header h1, p {
         text-align: center;
     }
+    h3 {
+        font-size: calc(10% + 3vw);
+        padding-bottom: 5%;
+    }
+    #container {
+        flex-direction: column;
+        height: 100vh;
+    }
 
-    ul {
-        text-align: center;
+
+    nav {
+        width: 100%;
+
+    }
+
+    nav ul {
         display: flex;
         flex-direction: row;
-        padding: 8px;
-        margin: 0;
-        background: dodgerblue;
-        border: 5px solid darkslateblue;
-        border-radius: 15px;
-        font-family: Times, Arial, sans-serif;
+        justify-content: space-around;
+        padding-right: 1%;
+        width: 100%;
+        text-align: center;
     }
 
-    li {
-        display: inline-flex;
-        padding: 5px 20px;
-        align-items: center;
-
-
+    nav li {
+        margin: 2% 1%;
+        padding: 1% .5%;
     }
 
-    li:hover {
 
-        background-color: palegreen;
-        border-radius: 5px;
-        list-style-type: none;
-    }
-}
-#credit{
-    color: blue;
+
 }
