@@ -6,11 +6,9 @@
 body {
     background-color: white;
     text-align: center;
-    font-size: calc(1 + 2vw);
 }
 
 h1, p{
-    font-size: calc(20% + 3vw);
     font-family: "Arial Rounded MT Bold", Arial, sans-serif;
     text-align: left;
 }

@@ -1,37 +1,171 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
 
-a{
-    text-decoration: none;
+body {
+    background-color: white;
+    text-align: center;
+}
+
+h1, p {
+    font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+    text-align: left;
+}
+
+#container ol{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+    padding-left: 10%;
+    text-align: center;
+    font-size: calc(40% + 3vw);
+}
+#container h4{
+    text-align: center;
+}
+
+#container .drumming-photos{
+    padding-top: 5%;
+}
+#container h1{
+    margin-top: 5%;
+    text-align: center;
+    font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+}
+#container p{
+    text-align: center;
+    padding: 2%;
+}
+#container {
+    height: 150vh;
+}
+
+
+
+.header{
+    background: linear-gradient(to bottom,
+    lightsteelblue,
+    cadetblue,
+    steelblue,
+    teal,
+    white);
+
+    border: 3px solid white;
+
+    padding: 0;
+    margin: 0 auto;
+    text-align: left;
+
+    width: 100%;
+
+}
+#page-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin: 0 auto;
+    background-color: dimgrey; ;
+}
+#container{
+    font-size: calc(3px + 2vw);
+    font-family: Times, Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+
+}
+
+nav {
+    width: 25%;
+    border: 10px solid darkslateblue;
+    border-radius: 5%;
+    padding: 0;
+    background: dodgerblue;
+
+}
+nav a{
+    text-decoration: none; /*gets rid of the link appearance*/
     color: white;
 }
 
 
-nav h1, nav p{
-    font-size: calc(11 + 3vw);
-    font-family: "Arial Rounded MT Bold", Arial, sans-serif;
-    text-align: center;
-}
-nav ul{
-    text-align: center;
-    display: block;
-    padding: 8px;
-    background: dodgerblue;
-    border: 5px solid darkslateblue;
-    border-radius: 15px;
+nav ul {
+    text-align: left;
     font-family: Times, Arial, sans-serif;
-}
-
-li{
-    display: inline;
-    padding: 8px;
-
-}
-
-li:hover{
-
-    background-color: palegreen;
-    border-radius: 5px;
+    padding: 0;
     list-style-type: none;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+
 }
-#credit{
-    color: blue;
+
+nav li {
+    border: 3px solid white;
+    border-radius: 5%;
+    padding: 3% 1%;
+    margin: 10vh 2%;
+
+
+}
+
+nav li:hover {
+    color: white;
+    background-color: palegreen;
+    border-radius: 20%;
+    list-style-type: none;
+    padding: 0;
+    border: 3px solid darkslateblue;
+}
+
+/* For screens bigger than 750-px: the content should be aligned leb.
+
+For screens smaller than 750-px: the content should be aligned center.*/
+
+
+/* For screens bigger than 750-px: should not exceed 30% of the width of its parent, and
+must be vertical
+
+For screens smaller than 750-px: should occupy 100% of the width of its parent and
+appear horizontal*/
+
+@media screen and (max-width: 750px) {
+
+    /* this header class is used to differentiate the headers of big and small
+    screens. There is a difference in the centering and layout when the window
+    is stretched or minimized.
+
+    need to changed the squeezing and need to change the nav bar */
+    .header h1, p {
+        text-align: center;
+    }
+
+    #container {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+
+
+    nav {
+        width: 100%;
+
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-right: 1%;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav li {
+        margin: 2% 1%;
+        padding: 1% .5%;
+    }
+
 }

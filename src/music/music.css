@@ -1,81 +1,165 @@
-
-body{
-
-    background-color: black;
-
-    .drumming-photos img{
-        width: calc(30 + 2vw);
-        height: auto;
-        max-width: 100%;
-        display: block;
-    }
+*{
+    box-sizing: border-box;
+    margin: 0;
 }
 
-h2{
-    font-size: calc(11 + 3vw);
+body {
+    background-color: white;
+    text-align: center;
+}
+
+h1, p {
+    font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+    text-align: left;
+}
+#container img {
+    display: block;
+    max-width: 30vw;
+    height: auto;
+    margin: 5% auto;
+
+}
+
+#container .drumming-photos{
+    padding-top: 5%;
+}
+#container h1{
+    margin-top: 5%;
+    text-align: center;
+    font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+}
+#container p{
+    text-align: center;
+    padding: 2%;
+}
+#container {
+    height: 360vh;
 }
 
 
-a{
-    text-decoration: none;
-    color: white;
-}
-
-
-nav {
-
+.header{
     background: linear-gradient(to bottom,
     lightsteelblue,
     cadetblue,
     steelblue,
     teal,
-    black);
-    border: 5px solid white;
-    border-radius: 15px;
+    white);
 
-    h1, p {
-        font-size: calc(11 + 3vw);
-        font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+    border: 3px solid white;
+
+    padding: 0;
+    margin: 0 auto;
+    text-align: left;
+
+    width: 100%;
+
+}
+#page-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin: 0 auto;
+    background-color: dimgrey; ;
+}
+#container{
+    font-size: calc(3px + 2vw);
+    font-family: Times, Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+
+}
+
+nav {
+    width: 25%;
+    border: 10px solid darkslateblue;
+    border-radius: 5%;
+    padding: 0;
+    background: dodgerblue;
+
+}
+nav a{
+    text-decoration: none; /*gets rid of the link appearance*/
+    color: white;
+}
+
+
+nav ul {
+    text-align: left;
+    font-family: Times, Arial, sans-serif;
+    padding: 0;
+    list-style-type: none;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+nav li {
+    border: 3px solid white;
+    border-radius: 5%;
+    padding: 3% 1%;
+    margin: 10vh 2%;
+
+
+}
+
+nav li:hover {
+    color: white;
+    background-color: palegreen;
+    border-radius: 20%;
+    list-style-type: none;
+    padding: 0;
+    border: 3px solid darkslateblue;
+}
+
+/* For screens bigger than 750-px: the content should be aligned leb.
+
+For screens smaller than 750-px: the content should be aligned center.*/
+
+
+/* For screens bigger than 750-px: should not exceed 30% of the width of its parent, and
+must be vertical
+
+For screens smaller than 750-px: should occupy 100% of the width of its parent and
+appear horizontal*/
+
+@media screen and (max-width: 750px) {
+
+    /* this header class is used to differentiate the headers of big and small
+    screens. There is a difference in the centering and layout when the window
+    is stretched or minimized.
+
+    need to changed the squeezing and need to change the nav bar */
+    .header h1, p {
         text-align: center;
     }
 
-    ul {
-        text-align: center;
+    #container {
+        flex-direction: column;
+        height: 120vh;
+    }
+
+
+
+    nav {
+        width: 100%;
+
+    }
+
+    nav ul {
         display: flex;
         flex-direction: row;
-        padding: 8px;
-        margin: 0;
-        background: dodgerblue;
-        border: 5px solid darkslateblue;
-        border-radius: 15px;
-        font-family: Times, Arial, sans-serif;
+        justify-content: space-around;
+        padding-right: 1%;
+        width: 100%;
+        text-align: center;
     }
 
-    li {
-        display: inline-flex;
-        padding: 5px 20px;
-        align-items: center;
-
-
+    nav li {
+        margin: 2% 1%;
+        padding: 1% .5%;
     }
 
-    li:hover {
-
-        background-color: palegreen;
-        border-radius: 5px;
-        list-style-type: none;
-    }
 }
-
-#credit{
-    color: blue;
-}
-
-/*@media screen and (max-width: 3000px) {*/
-/*    .drumming-photos {*/
-/*        display: flex;*/
-/*        flex-direction: column;*/
-/*        margin: auto;*/
-/*    }*/
-/*}*/
-
