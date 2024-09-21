@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
 body {
     background-color: white;
     text-align: center;
@@ -11,14 +16,24 @@ h1, p {
 }
 #container img {
     display: block;
-    border: 6px solid dimgrey;
-    max-width: 80%;
+    max-width: 40vw;
     height: auto;
-    margin: auto;
+    margin: 5% auto;
+
+}
+#container h1{
+    margin-top: 5%;
+    text-align: center;
+    font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+}
+#container p{
+    text-align: center;
+    padding: 2%;
 }
 #container {
-    height: 100vh;
+    height: 170vh;
 }
+
 
 .header{
     background: linear-gradient(to bottom,
@@ -121,10 +136,13 @@ nav li:hover {
 
     #container {
         flex-direction: column;
+        height: 90vh;
     }
 
+
+
     nav {
-        width: 95%;
+        width: 100%;
 
     }
 
