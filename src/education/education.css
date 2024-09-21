@@ -7,11 +7,10 @@
 body {
     background-color: white;
     text-align: center;
-    font-size: calc(1 + 2vw);
 }
 
 h1, p{
-    font-size: calc(20% + 3vw);
+
     font-family: "Arial Rounded MT Bold", Arial, sans-serif;
     text-align: left;
 }
@@ -24,6 +23,7 @@ h2{
 h3{
     font-size: calc(10% + 1vw);
     text-align: left;
+    padding: 2%
 }
 
 #container img {
@@ -148,7 +148,7 @@ appear horizontal*/
     }
     #container {
         flex-direction: column;
-        height: 140vh;
+        height: 200vh;
     }
 
 

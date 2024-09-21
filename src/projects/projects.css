@@ -78,7 +78,7 @@ h1, p {
     font-family: Times, Arial, sans-serif;
     display: flex;
     flex-direction: row;
-    height: 280vh
+    height: 300vh
 }
 nav {
     width: 25%;
@@ -189,7 +189,7 @@ nav li:hover {
 
     #container {
         flex-direction: column;
-        height: 150vh;
+        height: 190vh;
     }
 
     nav {
